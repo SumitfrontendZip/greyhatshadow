@@ -2,13 +2,14 @@ import InstagramIcon from './instagram.png'
 import YoutubeIcon from './youtube.png'
 import TelegramIcon from './telegram.png'
 import './Header.css'
+import { Link } from 'react-router-dom'
 function Header() {
   return (
     <header>
       <div className="social-media-icons">
-        <img src={InstagramIcon} alt="" />
-        <img src={YoutubeIcon} alt="" />
-        <img src={TelegramIcon} alt="" />
+        <Link to='https://www.instagram.com/greyhatshadow/'> <img src={InstagramIcon} alt="" /></Link>
+        <Link to='https://www.youtube.com/@greyhatshadow777'> <img src={YoutubeIcon} alt="" /></Link>
+        <Link to='https://t.me/greyhatshadow'> <img src={TelegramIcon} alt="" /></Link>
       </div>
       <hr />
       <div className="hearder-nav">
