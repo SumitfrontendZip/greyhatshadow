@@ -2,7 +2,10 @@ import { useRef, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import './Home.css';
 import CourseList from "../CourseList/CourseList";
- 
+import { Link } from "react-router-dom";
+import SoftwareList from "../SoftwareList/SoftwareList";
+import Header from "../Header/Header";
+
 function Home() {
     const btn = useRef();
 
@@ -18,10 +21,13 @@ function Home() {
             <div className="home-wrapper">
                 <h2>GREYHATSHADOW</h2>
                 <span>In the digital age, cybersecurity is not just a technical necessity; it's a mindset of vigilance and resilience.</span>
-                <button ref={btn}>BUY NOW</button>
+                <Link to='/shop'><button ref={btn}>BUY NOW</button></Link>
             </div>
-            <CourseList />
-           
+            <div className="Course-list-container">
+                <CourseList />
+                <SoftwareList />
+                <Header />
+            </div>
         </div>
     );
 }

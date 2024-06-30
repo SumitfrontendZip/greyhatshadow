@@ -1,0 +1,14 @@
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5% 0px;
+}
+.Shop-page-wrapper > header {
+    width: 100%;
+    margin-top: 20px;
+}
+.Shop-page-wrapper > .Course-list-container > .Course-list-wrapper {
+    border-radius: 30px;
+}

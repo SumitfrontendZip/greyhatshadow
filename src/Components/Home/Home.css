@@ -19,10 +19,10 @@
     letter-spacing: 4px;
     margin: 30px 0px;
     text-transform: capitalize;
-} 
+}
 
- 
-.home-wrapper > button {
+
+.home-wrapper>a>button {
     --background: #275efe;
     --text: #fff;
     --font-size: 16px;
@@ -51,56 +51,70 @@
     transform: translateY(var(--y)) translateZ(0);
     transition: transform var(--duration) ease, box-shadow var(--duration) ease;
 }
-.home-wrapper > button div {
+
+.home-wrapper>a>button div {
     display: flex;
     overflow: hidden;
     text-shadow: 0 var(--font-shadow) 0 var(--text);
 }
-.home-wrapper > button div span {
+
+.home-wrapper>a>button div span {
     display: block;
     backface-visibility: hidden;
     font-style: normal;
     transition: transform var(--duration) ease;
     transform: translateY(var(--m)) translateZ(0);
 }
-.home-wrapper > button div span:nth-child(1) {
+
+.home-wrapper>a>button div span:nth-child(1) {
     transition-delay: 0.05s;
 }
-.home-wrapper > button div span:nth-child(2) {
+
+.home-wrapper>a>button div span:nth-child(2) {
     transition-delay: 0.1s;
 }
-.home-wrapper > button div span:nth-child(3) {
+
+.home-wrapper>a>button div span:nth-child(3) {
     transition-delay: 0.15s;
 }
-.home-wrapper > button div span:nth-child(4) {
+
+.home-wrapper>a>button div span:nth-child(4) {
     transition-delay: 0.2s;
 }
-.home-wrapper > button div span:nth-child(5) {
+
+.home-wrapper>a>button div span:nth-child(5) {
     transition-delay: 0.25s;
 }
-.home-wrapper > button div span:nth-child(6) {
+
+.home-wrapper>a>button div span:nth-child(6) {
     transition-delay: 0.3s;
 }
-.home-wrapper > button div span:nth-child(7) {
+
+.home-wrapper>a>button div span:nth-child(7) {
     transition-delay: 0.35s;
 }
-.home-wrapper > button div span:nth-child(8) {
+
+.home-wrapper>a>button div span:nth-child(8) {
     transition-delay: 0.4s;
 }
-.home-wrapper > button div span:nth-child(9) {
+
+.home-wrapper>a>button div span:nth-child(9) {
     transition-delay: 0.45s;
 }
-.home-wrapper > button div span:nth-child(10) {
+
+.home-wrapper>a>button div span:nth-child(10) {
     transition-delay: 0.5s;
 }
-.home-wrapper > button div span:nth-child(11) {
+
+.home-wrapper>a>button div span:nth-child(11) {
     transition-delay: 0.55s;
 }
-.home-wrapper > button:hover {
+
+.home-wrapper>a>button:hover {
     --y: var(--move-hover);
     --shadow: var(--shadow-hover);
 }
-.home-wrapper > button:hover span {
+
+.home-wrapper>a>button:hover span {
     --m: calc(var(--font-size) * -1);
 }
- 
