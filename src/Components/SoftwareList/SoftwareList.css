@@ -35,9 +35,12 @@
 }
 
 .software-wrapper {
+    border-radius: 10px;
+    padding: 52px 23px;
     margin: 30px;
+    cursor: pointer;
 }
-
+ 
 .software-wrapper>span {
     color: blue;
     cursor: pointer;
@@ -62,5 +65,5 @@
 
 .software-wrapper>p {
     color: rgb(201, 180, 180);
- 
+
 }

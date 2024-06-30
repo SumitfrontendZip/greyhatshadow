@@ -1,0 +1,25 @@
+.Software-page-wrapper>header {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.Software-page-wrapper>.Course-list-container>.software-list-container>.software-list-wrapper>.software-wrapper>p {
+    overflow: visible;
+    height: 100%;
+}
+
+.Software-page-wrapper>.Course-list-container>.software-list-container>.software-list-wrapper>.software-wrapper>.none {
+    display: none;
+}
+
+.Software-page-wrapper>.Course-list-container>.software-list-container {
+    border-radius: 20px;
+    padding: 60px 0px;
+}
+
+.Software-page-wrapper>.Course-list-container>.software-list-container>.software-list-wrapper>.software-wrapper {
+    border: 1px solid rgb(199, 199, 199);
+}
+.Software-page-wrapper>.Course-list-container>.software-list-container>.software-list-wrapper>.software-wrapper:hover {
+    box-shadow: 0px 0px 10px 0px black;
+}

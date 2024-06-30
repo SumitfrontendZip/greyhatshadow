@@ -34,7 +34,7 @@ function SoftwareList() {
                 <h4>{category}</h4>
                 <h2>{title}</h2>
                 <p>{description}</p>
-                <span>Read More...</span>
+                <span className='none'>Read More...</span>
             </div>
         )
     }
@@ -42,7 +42,7 @@ function SoftwareList() {
     return (
         <div className='software-list-container'>
             <h2>Softwares</h2>
-            <span>Download Clean Softwares Tool By DedSec For free</span>
+            <span>Download Clean Softwares Tool By GreyHatShadow For free</span>
             <div className="software-list-wrapper">
                 {
                     softwareData.map((software) =>

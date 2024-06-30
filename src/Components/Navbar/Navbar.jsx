@@ -4,6 +4,7 @@ import './Navbar.css';
 import cartIcon from './shopping-cart.png';
 import homeImage from './home.jpg';
 
+
 function Navbar() {
 
     return (
