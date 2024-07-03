@@ -14,10 +14,10 @@ function Header() {
       <hr />
       <div className="hearder-nav">
         <div className="header-nav-items">
-          <div className="header-nav-item">ABOUT US</div>
-          <div className="header-nav-item">PRIVACY POLICY</div>
-          <div className="header-nav-item">REFUNDS & CANCELLATIONS POLICY</div>
-          <div className="header-nav-item">CONTACT US</div>
+          <div className="header-nav-item"><Link to='/aboutus'>ABOUT US</Link></div>
+          <div className="header-nav-item"><Link to='/privacy-policy'>PRIVACY POLICY</Link></div>
+          <div className="header-nav-item"><Link to='/Refunds-Cancellations-Policy'>REFUNDS & CANCELLATIONS POLICY</Link></div>
+          <div className="header-nav-item"> <Link to='/contact-us'>CONTACT US</Link></div>
         </div>
         <div className="tradeMark">
           Copyright &#169; 2023 - 2024 GREYHATSHADOW

@@ -1,5 +1,4 @@
-header {
-    color: rgb(255, 255, 255);
+header { 
     letter-spacing: 3px;
     background: #000;
     width: 90vw;
@@ -34,4 +33,10 @@ header>hr {
 .header-nav-item {
     margin: 0px 10px;
     cursor: pointer;
+}
+.header-nav-item > a{
+    color: white;
+}
+.tradeMark{
+    color: white;
 }

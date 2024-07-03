@@ -1,0 +1,35 @@
+.about-page-wrapper>header {
+    width: 100%;
+}
+
+.aboutus-content {
+    display: block;
+    width: 50%;
+    padding: 60px 350px;
+    margin: 50px 0px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 30px;
+    border-radius: 30px;
+}
+.about-page-wrapper > .heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+.aboutus-content > div {
+    margin: 50px 0px;
+}
+.aboutus-content > hr{
+    margin: 10px 0px;
+    border-top: 1px solid rgb(225, 225, 225);
+}
+.aboutus-content > h4{
+    font-weight: 700;
+    font-size: 1.rem;
+}
+.aboutus-content > h3{
+    margin: 20px 0px;
+}
+.about-page-wrapper > .heading{
+    margin: 0px;
+}
