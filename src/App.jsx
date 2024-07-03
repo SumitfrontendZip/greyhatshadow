@@ -3,6 +3,7 @@ import './App.css'
 import Home from './Components/Home/Home'
 import ShopPage from './Components/ShopPage/ShopPage'
 import SoftwarePage from './Components/SoftwarePage/SoftwarePage'
+import ProductDetails from './Components/ProductDetails/ProductDetails'
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
     {
       path: '/softwares',
       element: <SoftwarePage />
+    }, {
+      path: '/:category/:title/:id/',
+      element: <ProductDetails />
     }
   ])
 

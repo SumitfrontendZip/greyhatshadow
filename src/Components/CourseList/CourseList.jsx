@@ -1,6 +1,7 @@
 import Product from "../Product/Product"
 import productData from "./list"
 import './CourseList.css'
+import { Link } from "react-router-dom"
 function CourseList() {
     return (
 
@@ -10,14 +11,16 @@ function CourseList() {
             <div className="course-list">
                 {
                     productData.map((product) =>
-                        <Product
-                            key={product.id}
-                            title={product.title}
-                            image={product.image}
-                            price={product.price}
-                            discountPrice={product.discountPrice}
-                            category={product.category}
-                        />)
+                        <Link  key={product.id} to={`/${product.category}/${product.title}/${product.id}`}>
+                            <Product
+                                title={product.title}
+                                image={product.image}
+                                price={product.price}
+                                discountPrice={product.discountPrice}
+                                category={product.category}
+                            />
+                        </Link>
+                    )
                 }
             </div>
         </div>
