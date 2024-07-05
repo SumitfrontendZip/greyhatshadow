@@ -1,28 +1,41 @@
-import React from "react";
 import { Link, useParams } from "react-router-dom";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
 import './ProductDetails.css';
 import productData from "../CourseList/list";
+import { useState } from "react";
 
 function ProductDetails() {
     const { id, title } = useParams();
+    const [productCount, setProductCount] = useState(1)
+    const [addToCartItem, setAddToCartItem] = useState(1)
+
+    const handleAddtoCart = () => {
+        if (productCount >= 0) {
+            setAddToCartItem(productCount)
+        }
+    }
 
     const product = productData.find((item) => item.title === title || item.id === id);
 
     if (!product) {
-        return <div>Product not found</div>;
+        return <div className="product-details-wrapper">
+            <Navbar />
+            <h1>404</h1>
+            <p>Oops! Something is wrong.</p>
+            <Link className="button" to="/"><i className="icon-home"></i> Go back in initial page, is better.</Link>
+        </div>;
     }
 
     return (
         <div className="product-details-wrapper">
-            <Navbar />
+            <Navbar addToCartItem={addToCartItem} />
             <div className="product-details-container">
                 <span>
                     <Link to='/'>Home</Link>
-                    / 
+                    /
                     <Link to={product.category === 'product' ? '/shop' : '/software'}>{product.category}</Link>
-                    / 
+                    /
                     {title}
                 </span>
                 <section>
@@ -31,10 +44,10 @@ function ProductDetails() {
                         <h3>{product.title}</h3>
                         <span>₹ {product.price}</span>
                         <div className="buttonSection">
-                            <input type="number"  />
-                            <button>
-                                <span>ADD TO CART</span>
-                                <img src="" alt="" />
+                            <input type="number" value={productCount} onChange={(e) => setProductCount(e.target.value)} />
+                            <button onClick={handleAddtoCart}>
+                                <Link to='/add-to-cart'>ADD TO CART</Link>
+                                {/* <img src="" alt="" /> */}
                             </button>
                         </div>
                         <div className="category">

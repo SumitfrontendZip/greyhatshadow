@@ -8,7 +8,8 @@ const productData = [
         image: img1,
         price: 8300,
         discountPrice: '415,625.00',
-        category: 'product'
+        category: 'product',
+        productCode:84512
     }   
  
 ]

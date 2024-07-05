@@ -11,20 +11,6 @@ function SoftwareList() {
             title: 'OTP BOT – OTP Stealer Tool',
             description: 'One-time password (OTP) bots are automated programs attackers can use to extract one-time authentication passwords from users by tricking people into divulging an authentication code that has been sent by email, SMS, or even an authentication app. Once the fraudster is authenticated, they can perform unauthorized actions (like transactions) from MFA-protected accounts.'
         },
-        {
-            id: uuidv4(),
-            image: image,
-            category: 'software',
-            title: 'OTP BOT – OTP Stealer Tool',
-            description: 'One-time password (OTP) bots are automated programs attackers can use to extract one-time authentication passwords from users by tricking people into divulging an authentication code that has been sent by email, SMS, or even an authentication app. Once the fraudster is authenticated, they can perform unauthorized actions (like transactions) from MFA-protected accounts.'
-        },
-        {
-            id: uuidv4(),
-            image: image,
-            category: 'software',
-            title: 'OTP BOT – OTP Stealer Tool',
-            description: 'One-time password (OTP) bots are automated programs attackers can use to extract one-time authentication passwords from users by tricking people into divulging an authentication code that has been sent by email, SMS, or even an authentication app. Once the fraudster is authenticated, they can perform unauthorized actions (like transactions) from MFA-protected accounts.'
-        },
     ]
 
     const softwareItem = (image, category, title, description, id) => {

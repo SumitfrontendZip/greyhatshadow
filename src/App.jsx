@@ -8,6 +8,7 @@ import AboutUs from './Components/AboutUs/AboutUs'
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy'
 import RefundsCancellation from './Components/RefundsCancellation/RefundsCancellation'
 import ContactUs from './Components/ContactUs/ContactUs'
+import AddToCart from './Components/AddToCart/AddToCart'
 
 function App() {
 
@@ -26,18 +27,21 @@ function App() {
     }, {
       path: '/:category/:title/:id/',
       element: <ProductDetails />
-    },{
-      path:'/aboutUs',
-      element:<AboutUs/>
-    },{
-      path:'/privacy-policy',
-      element:<PrivacyPolicy/>
-    },{
-      path:'/Refunds-Cancellations-Policy',
-      element:<RefundsCancellation/>
-    },{
-      path:'/contact-us',
-      element:<ContactUs/>
+    }, {
+      path: '/aboutUs',
+      element: <AboutUs />
+    }, {
+      path: '/privacy-policy',
+      element: <PrivacyPolicy />
+    }, {
+      path: '/Refunds-Cancellations-Policy',
+      element: <RefundsCancellation />
+    }, {
+      path: '/contact-us',
+      element: <ContactUs />
+    }, {
+      path: '/add-to-cart',
+      element: <AddToCart />
     }
   ])
 
