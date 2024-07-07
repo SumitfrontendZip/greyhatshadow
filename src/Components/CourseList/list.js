@@ -11,7 +11,6 @@ const productData = [
         category: 'product',
         productCode:84512
     }   
- 
 ]
 
 export default productData;

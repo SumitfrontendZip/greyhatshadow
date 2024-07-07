@@ -131,7 +131,6 @@ nav>a>img {
     transform: translateY(-100%);
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
     .navItems {
         width: 60%;
@@ -199,7 +198,7 @@ nav>a>img {
     }
 
     nav>a>img {
-        width: 25px;
+        width: 100px;
     }
 
     .snip1143 a {
