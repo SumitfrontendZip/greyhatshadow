@@ -7,10 +7,10 @@
      align-items: center;
      margin: 0 auto;
      overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
  }
-
-
-
+ 
  .software-list-container>h2 {
      color: rgb(68, 68, 68);
      font-size: 2.5rem;

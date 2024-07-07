@@ -28,14 +28,14 @@ function Navbar({ addToCartItem }) {
                 <Link to='/softwares'  >
                     <span data-hover='SOFTWARES'>SOFTWARES</span>
                 </Link>
-                <Link to='/login'  >
+                {/* <Link to='/login'  >
                     <span data-hover='LOGIN'>LOGIN</span>
                 </Link>
                 <Link to='/register' >
                     <span data-hover='REGISTER'>REGISTER</span>
-                </Link>
+                </Link> */}
             </div>
-            <Link to='/add-to-cart' className='cartLink'>
+            <Link to='/contact-us' className='cartLink'>
                 <img src={cartIcon} alt="" />
                 <span>{addToCartItem}</span>
             </Link>

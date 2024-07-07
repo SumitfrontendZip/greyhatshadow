@@ -26,7 +26,9 @@ const ContactUs = () => {
                                 <span>CONTACT</span>
                                 <span>US</span>
                             </div>
-                            <div className="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+                            <div className="app-contact">
+                                <span>CONTACT INFO : +91 8266828647 <br /> G-MAIL INFO:- sujal@greyhatshadow.com</span>
+                            </div>
                         </div>
                         <div className="screen-body-item">
                             <div className="app-form">
