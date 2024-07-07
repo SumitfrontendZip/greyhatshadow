@@ -8,6 +8,18 @@
      width: 100vw;
  }
 
+ .tagDescription>ul {
+     margin-left: 20px;
+ }
+
+ .tagDescription > ul > li{
+    margin:10px 0px;
+    text-align: justify;
+ }
+
+ .tagDescription {
+     margin-top: 20px;
+ }
 
  .product-details-container {
      width: 60%;
@@ -90,6 +102,7 @@
  }
 
  .buttonSection>a>button {
+     width: 100%;
      padding: 10px 20px;
      border: none;
      margin-left: 10px;
@@ -136,6 +149,7 @@
      .buttonSection {
          flex-direction: column;
          align-items: flex-start;
+         display: block;
      }
 
      .buttonSection>input {

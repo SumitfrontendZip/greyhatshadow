@@ -7,7 +7,7 @@ function CourseList() {
 
         <div className="Course-list-wrapper">
             <div className="Course-list-title">Course & Products</div>
-            <span>Pure Practical Courses In Your Mother tongue</span>
+            <span>Pure Practical Courses</span>
             <div className="course-list">
                 {
                     productData.map((product) =>

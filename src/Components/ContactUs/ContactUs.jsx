@@ -1,7 +1,53 @@
-import Header from "../Header/Header"
-import Navbar from "../Navbar/Navbar"
-import './ContactUs.css'
+import { useState } from 'react';
+import Header from '../Header/Header';
+import Navbar from '../Navbar/Navbar';
+import './ContactUs.css';
+import emailjs from 'emailjs-com';
+
 const ContactUs = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        productCode: '',
+        email: '',
+        contactNo: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const templateParams = {
+            name: formData.name,
+            productCode: formData.productCode,
+            email: formData.email,
+            contactNo: formData.contactNo,
+            message: formData
+        };
+
+        emailjs.send(
+            'service_ezy4zie',
+            'template_ca1ks8x',
+            templateParams,
+            'tr9e4vWuT0VuKc9ri'
+        )
+            .then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                },
+                (error) => {
+                    console.error('FAILED...', error.text);
+                }
+            );
+    };
+
     return (
         <div className="about-page-wrapper imageStrech">
             <Navbar />
@@ -32,22 +78,62 @@ const ContactUs = () => {
                         </div>
                         <div className="screen-body-item">
                             <div className="app-form">
-                                <div className="app-form-group">
-                                    <input className="app-form-control" placeholder="NAME" />
-                                </div>
-                                <div className="app-form-group">
-                                    <input className="app-form-control" placeholder="EMAIL" />
-                                </div>
-                                <div className="app-form-group">
-                                    <input className="app-form-control" placeholder="CONTACT NO" />
-                                </div>
-                                <div className="app-form-group message">
-                                    <input className="app-form-control" placeholder="MESSAGE" />
-                                </div>
-                                <div className="app-form-group buttons">
-                                    <button className="app-form-button">CANCEL</button>
-                                    <button className="app-form-button">SEND</button>
-                                </div>
+                                <form onSubmit={handleSubmit}>
+                                    <div className="app-form-group">
+                                        <input
+                                            className="app-form-control"
+                                            type="text"
+                                            placeholder="NAME"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                        />
+                                    </div>
+                                    <div className="app-form-group">
+                                        <input
+                                            className="app-form-control"
+                                            type="text"
+                                            placeholder="Product code"
+                                            name="productCode"
+                                            value={formData.productCode}
+                                            onChange={handleChange}
+                                        />
+                                    </div>
+                                    <div className="app-form-group">
+                                        <input
+                                            className="app-form-control"
+                                            type="email"
+                                            placeholder="EMAIL"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                        />
+                                    </div>
+                                    <div className="app-form-group">
+                                        <input
+                                            className="app-form-control"
+                                            type="text"
+                                            placeholder="CONTACT NO"
+                                            name="contactNo"
+                                            value={formData.contactNo}
+                                            onChange={handleChange}
+                                        />
+                                    </div>
+                                    <div className="app-form-group message">
+                                        <input
+                                            className="app-form-control"
+                                            type="text"
+                                            placeholder="MESSAGE"
+                                            name="message"
+                                            value={formData.message}
+                                            onChange={handleChange}
+                                        />
+                                    </div>
+                                    <div className="app-form-group buttons">
+                                        <button className="app-form-button" type="button">CANCEL</button>
+                                        <button className="app-form-button" type="submit" onClick={() => alert('Thanks for Enquiry')}>SEND</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -55,7 +141,7 @@ const ContactUs = () => {
             </div>
             <Header />
         </div>
-    )
-}
+    );
+};
 
-export default ContactUs
+export default ContactUs;
