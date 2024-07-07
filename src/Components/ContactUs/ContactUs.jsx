@@ -29,7 +29,7 @@ const ContactUs = () => {
             productCode: formData.productCode,
             email: formData.email,
             contactNo: formData.contactNo,
-            message: formData
+            message: formData.message
         };
 
         emailjs.send(
