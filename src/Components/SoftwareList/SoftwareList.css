@@ -36,7 +36,7 @@
      color: rgb(49, 47, 47);
  }
 
- .software-list-wrapper {
+ .software-list-wrapper >a{
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
